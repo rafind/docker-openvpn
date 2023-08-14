@@ -23,7 +23,7 @@ all: stop build run download_config
 # Build Docker image
 build:
 	@echo "Building Docker image..."
-	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+	docker build -q -t $(IMAGE_NAME):$(IMAGE_TAG) .
 
 # Run Docker container
 run:
